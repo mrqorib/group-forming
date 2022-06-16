@@ -15,11 +15,11 @@ Combine subgroups into groups:
 ## Config explanation
 | key | description |
 | --------- | ----- |
-| min_score | Minimum score for **each member** to be considered in the reward. Skills below the min_score will have a reward of 0. |
-| max_score | Maximum score of the **combined group** to be considered in the reward. For example, if the combined group has the score of 10 for a particular skill but the max_score is 9, then the reward for that skill is capped to 9. |
+| min_score | Minimum score for **each member** to be considered in the reward. Skills that have scores below the min_score will have a reward of 0. |
+| max_score | Maximum score of the **combined group** to be considered in the reward. For example, if the combined group has an aggregated score of 10 for a particular skill but the max_score is 9, then the reward for that skill is capped to 9. |
 | agg | Aggregation method to be used when calculating the reward of the combined group. |
-| weight | the weight for each aspects when calculating the final reward. |
-| work_scheme_diff | the tolerance of working scheme difference |
+| weight | Weight for each aspects when calculating the final reward. |
+| work_scheme_diff | Tolerance of working scheme difference when calculating the reward. |
 
 
 ## Post-process
