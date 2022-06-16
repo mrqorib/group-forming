@@ -1,0 +1,99 @@
+{
+  "1": {
+    "name": [
+      "John Doe"
+    ],
+    "id": [
+      "A12345X"
+    ],
+    "study": [
+      "Master"
+    ],
+    "topics": {
+      "Communication": 1,
+      "Marketing": 2,
+      "Business": 1
+    },
+    "skills": {
+      "prog": [
+        2.0
+      ],
+      "dc": [
+        2.0
+      ],
+      "da": [
+        2.0
+      ],
+      "ml": [
+        2.0
+      ],
+      "dl": [
+        2.0
+      ],
+      "ling": [
+        2.0
+      ],
+      "writ": [
+        3.0
+      ],
+      "nlp": [
+        1.0
+      ]
+    },
+    "off-or-on": 0
+  },
+  "2": {
+    "name": [
+      "Mark Ruffalo",
+      "Chris Pine"
+    ],
+    "id": [
+      "A45678R",
+      "A92842X"
+    ],
+    "study": [
+      "PhD",
+      "PhD"
+    ],
+    "topics": {
+      "Communication": 0,
+      "Marketing": 2,
+      "Business": 1
+    },
+    "skills": {
+      "prog": [
+        2.0,
+        2.0
+      ],
+      "dc": [
+        2.0,
+        2.0
+      ],
+      "da": [
+        1.0,
+        3.0
+      ],
+      "ml": [
+        2.0,
+        2.0
+      ],
+      "dl": [
+        1.0,
+        2.0
+      ],
+      "ling": [
+        1.0,
+        0.0
+      ],
+      "writ": [
+        2.0,
+        1.0
+      ],
+      "nlp": [
+        0.0,
+        0.0
+      ]
+    },
+    "off-or-on": 2
+  }
+}
