@@ -7,3 +7,4 @@ src/prepare*
 misc/*
 input/subgroups.json
 4248.json
+validate_alloc_result.py
