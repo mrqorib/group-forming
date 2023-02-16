@@ -1,0 +1,55 @@
+{
+    "skills": {
+        "prog": {
+            "min": 2,
+            "max": 9,
+            "agg": "sum",
+            "weight": 1
+        },
+        "dc": {
+            "min": 0,
+            "agg": "max",
+            "weight": 1
+        },
+        "da": {
+            "min": 0,
+            "agg": "max",
+            "weight": 1
+        },
+        "ml": {
+            "min": 2,
+            "max": 5,
+            "agg": "sum",
+            "weight": 1
+        },
+        "dl": {
+            "min": 2,
+            "max": 5,
+            "agg": "sum",
+            "weight": 1
+        },
+        "ling": {
+            "min": 0,
+            "agg": "max",
+            "weight": 1
+        },
+        "writ": {
+            "min": 0,
+            "agg": "max",
+            "weight": 1
+        },
+        "nlp": {
+            "min": 0,
+            "max": 4,
+            "agg": "sum",
+            "weight": 1
+        }
+    },
+    "topics": {
+        "max_score": 3,
+        "interest": 2,
+        "weight": 8
+    },
+    "work_scheme_diff": 1,
+    "total_students": 180
+}

@@ -24,3 +24,9 @@ Combine subgroups into groups:
 
 ## Post-process
 After you have run the code, the optimal groupings will be generated based on the `--output_path` argument, which by default is set to `groups.json`. Then, run `json2csv.py` to convert the result from a JSON format into a CSV file.
+
+## Updates
+2023.2 Modified by Longshen:
+- Some students are not shown in the final allocation results. Solved after adding "completeness term" in fitness function.
+- There are usually groups with undesired size. Solved after adding group size penalty term to fitness function.
+- (Not done yet) There are too many common topics. Can consider the similarity of topic interest inside the fitness function.

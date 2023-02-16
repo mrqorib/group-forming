@@ -1,0 +1,11 @@
+.idea/*
+raw/*
+subgroups.json
+output/*
+src/prepare*
+.DS_Store
+misc/*
+input/subgroups.json
+input/subgroups.json
+input/subgroups.json
+input/subgroups.json
