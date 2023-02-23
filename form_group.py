@@ -132,6 +132,7 @@ def main(args):
             score += topic_score * config['topics']['weight']
 
         # If any subgroup dislike the most interested topics, add penalty
+        # TODO
 
         # We need at least one person has certain level of programming skill
         max_prog = max([int(i) for i in comb_skills['prog']])
@@ -142,7 +143,7 @@ def main(args):
 
         # If group size undesired, add penalty.
         group_size = len(merged_group['id'])
-        if 5 <= group_size <= 6:
+        if args.min_member <= group_size <= args.max_member:
             group_size_penalty = 0
         else:
             group_size_penalty = -1000
@@ -223,7 +224,7 @@ def main(args):
     fitness_function = fitness_func
 
     # Define some hyperparameters
-    num_generations = 2000  # Loop for 500 iterations
+    num_generations = 2000  # Loop for 2000 iterations
     num_parents_mating = 10  # Select this num of solutions from parent to generate next solution
     sol_per_pop = 10  # Num of solutions within each population
     num_dummy = min(  # Create some empty groups for flexibility
@@ -301,6 +302,34 @@ def main(args):
             score = fitness_func(chrom)
             # print(score)
             if score > 0 and new_group_id <= num_groups:
+                num_valid_pop += 1
+                populations.append(chrom)
+                print('.', end='')
+    elif args.init_method == 2:
+        num_rep_fix = 2
+        num_rep_mut = 3
+        num_iter = 0
+        while len(populations) < sol_per_pop:
+            chrom = []
+            for _fix_i in range(num_rep_fix):
+                chrom += list(range(0, fixed_num))
+            for _mut_i in range(num_rep_mut):
+                chrom += list(range(fixed_num, num_groups))
+            # chrom += random.sample(list(range(fixed_num)), round(random.random() * fixed_num))
+            random_num = num_genes - len(chrom)
+            if random_num > 0:
+                # print('Adding {} more genes'.format(random_num))
+                add_chrom = []
+                num_rep = random_num // (args.max_member - num_rep_mut)
+                for _ii in range(num_rep + 1):
+                    add_chrom += list(range(fixed_num, num_groups))
+                chrom += random.sample(add_chrom, random_num)
+            else:
+                # print('Sampling the genes from {} to {}'.format(len(chrom), num_genes))
+                chrom = random.sample(num_genes)
+            random.shuffle(chrom)
+            num_iter += 1
+            if fitness_func(chrom) > 0:
                 num_valid_pop += 1
                 populations.append(chrom)
                 print('.', end='')
