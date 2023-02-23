@@ -4,15 +4,20 @@
       "John Doe"
     ],
     "id": [
-      "A12345X"
+      "e0740922"
     ],
     "study": [
       "Master"
     ],
     "topics": {
-      "Communication": 1,
-      "Marketing": 2,
-      "Business": 1
+      "LUN": 1,
+      "Emoji": 2,
+      "ConceptNet": 1,
+      "Dialogue": 1,
+      "SciCite": 2,
+      "IWSLT": 1,
+      "SQuAD": 0,
+      "SNLI": 1
     },
     "skills": {
       "prog": [
@@ -40,7 +45,7 @@
         1.0
       ]
     },
-    "off-or-on": 0
+    "off-or-on": 1
   },
   "2": {
     "name": [
@@ -56,9 +61,14 @@
       "PhD"
     ],
     "topics": {
-      "Communication": 0,
-      "Marketing": 2,
-      "Business": 1
+      "LUN": 1,
+      "Emoji": 2,
+      "ConceptNet": 1,
+      "Dialogue": 1,
+      "SciCite": 2,
+      "IWSLT": 1,
+      "SQuAD": 0,
+      "SNLI": 1
     },
     "skills": {
       "prog": [
@@ -94,6 +104,6 @@
         0.0
       ]
     },
-    "off-or-on": 2
+    "off-or-on": 1
   }
 }

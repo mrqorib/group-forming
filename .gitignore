@@ -1,0 +1,12 @@
+.idea/*
+raw/*
+subgroups.json
+output/*
+prepare*
+.DS_Store
+misc/*
+input/subgroups.json
+4248.json
+validate_alloc_result.py
+utils.py
+correct*
