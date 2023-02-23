@@ -326,7 +326,7 @@ def main(args):
                 chrom += random.sample(add_chrom, random_num)
             else:
                 # print('Sampling the genes from {} to {}'.format(len(chrom), num_genes))
-                chrom = random.sample(num_genes)
+                chrom = random.sample(chrom, num_genes)
             random.shuffle(chrom)
             num_iter += 1
             if fitness_func(chrom) > 0:
